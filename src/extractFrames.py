@@ -18,7 +18,7 @@ import numpy as np
 # CONFIG — แก้ค่าตรงนี้
 # ============================================================
 VIDEO_PATHS = [
-    "videos/originalVideo.mp4",   # ใส่ path วิดีโอของคุณ
+    "dataset/Videos/20251025_080202.mp4",   # ใส่ path วิดีโอของคุณ
     "videos/line2.avi",
 ]
 
@@ -61,7 +61,7 @@ def extract_frames_from_video(video_path: str, output_dir: str) -> list:
         if not ret:
             break
         
-        frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
+        # frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
 
 
         # แยกทุกๆ FRAME_INTERVAL
